@@ -1,5 +1,6 @@
 <ng-template [ngIf]="hero" [ngIfElse]="noSelection">
   <h2>{{ hero.name | uppercase }} Details</h2>
+  <button (click)="goBack()">Go Back</button>
 
   <div><span>ID: </span>{{ hero.id }}</div>
 
